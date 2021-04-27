@@ -1,0 +1,91 @@
+header {
+    position: relative;
+}
+
+.header_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    .logo {
+        @media (max-width: 990px) {
+            height: 36px;
+            width: 92px;
+        }
+    }
+    .menu {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+        }
+    }
+    .close {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+            position: absolute;
+            top: 17px;
+            right: 10px;
+        }
+    }
+    nav {
+        @media (max-width: 990px) {
+            width: 80vw;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            transition: .3s;
+            transform: translateX(110%);
+            position: absolute;
+            height: 475px;
+            background: #FFF;
+            box-shadow: -7px 4px 15px rgba(159, 159, 159, .25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            @media (max-width: 990px) {
+                padding: 0 15px;
+                justify-content: center;
+                flex-direction: column;
+            }
+            li {
+                margin: 0 0 0 30px;
+                @media (max-width: 990px) {
+                    margin: 0;
+                    border-bottom: 1px solid #DBDBDB;
+                    padding-bottom: 25px;
+                    margin-bottom: 25px;
+                    width: 100%;
+                    text-align: center;
+                    display: block;
+                }
+                a {
+                    font: 400 1.125rem 'Lato', sans-serif;
+                    transition: .2s;
+                    color: #000;
+                    @media (max-width: 990px) {
+                        text-align: center;
+                        font: 400 1rem 'Lato', sans-serif;
+                    }
+                    &:hover {
+                        color: #1CAAE6;
+                        font-weight: 700;
+                    }
+                }
+            }
+            li:last-child {
+                border: none;
+                padding: 0;
+            }
+        }
+    }
+    .nav_active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
