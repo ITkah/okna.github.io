@@ -32,6 +32,7 @@ header {
         @media (max-width: 990px) {
             width: 80vw;
             right: 0;
+            z-index: 99;
             top: 0;
             opacity: 0;
             transition: .3s;
