@@ -59,15 +59,17 @@ footer {
             border-top: 1px solid #C6C6C6;
         }
         img {
-            margin: 0 15px 0 0;
+            margin: 0 20px 0 0;
             max-width: 100%;
             height: auto;
+            object-fit: contain;
             @media (max-width: 990px) {
                 margin: 0 5px;
                 object-fit: contain;
             }
         }
         img:first-child {
+            height: 60px;
             @media (max-width: 768px) {
                 height: 35px;
             }
@@ -76,33 +78,27 @@ footer {
             }
         }
         img:nth-child(2) {
-            height: 22px;
+            height: 34px;
             @media (max-width: 320px) {
                 height: 20px;
             }
         }
         img:nth-child(3) {
-            height: 27px;
+            height: 39px;
             @media (max-width: 320px) {
                 height: 23px;
             }
         }
         img:nth-child(4) {
-            height: 24px;
+            height: 38px;
             @media (max-width: 320px) {
                 height: 20px;
             }
         }
         img:nth-child(5) {
-            height: 24px;
+            height: 60px;
             @media (max-width: 320px) {
                 height: 20px;
-            }
-        }
-        img:last-child {
-            height: 49px;
-            @media (max-width: 320px) {
-                height: 35px;
             }
         }
     }
