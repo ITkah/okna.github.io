@@ -58,6 +58,9 @@ footer {
             padding-top: 25px;
             border-top: 1px solid #C6C6C6;
         }
+        @media (max-width: 576px) {
+            justify-content: space-between;
+        }
         img {
             margin: 0 20px 0 0;
             max-width: 100%;
@@ -74,31 +77,31 @@ footer {
                 height: 35px;
             }
             @media (max-width: 576px) {
-                height: 25px;
+                height: 30px;
             }
         }
         img:nth-child(2) {
             height: 34px;
             @media (max-width: 576px) {
-                height: 20px;
+                height: 21px;
             }
         }
         img:nth-child(3) {
             height: 39px;
             @media (max-width: 576px) {
-                height: 23px;
+                height: 25px;
             }
         }
         img:nth-child(4) {
             height: 38px;
             @media (max-width: 576px) {
-                height: 20px;
+                height: 22px;
             }
         }
         img:nth-child(5) {
             height: 60px;
             @media (max-width: 576px) {
-                height: 20px;
+                height: 26px;
             }
         }
     }

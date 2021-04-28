@@ -34,6 +34,7 @@
             text-align: center;
             font: 400 1rem/22px 'Lato', sans-serif;
             @media (max-width: 990px) {
+                max-width: 320px;
                 font: 400 .87rem/18px 'Lato', sans-serif;
             }
         }
