@@ -1,0 +1,74 @@
+.special {
+    .title_xl {
+        max-width: 770px;
+        @media (max-width: 990px) {
+            max-width: 300px;
+        }
+        &::after {
+            top: 65px;
+            right: 15px;
+            @media (max-width: 990px) {
+                top: 59px;
+                right: 80px;
+            }
+        }
+    }
+    .special_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+        }
+        .special_box {
+            padding: 35px;
+            background: #1CAAE6;
+            border-radius: 4px;
+            display: grid;
+            grid-template-columns: 57px 1fr;
+            grid-gap: 30px;
+            @media (max-width: 990px) {
+                grid-gap: 20px;
+                padding: 20px;
+            }
+            .special_info {
+                .special_title {
+                    margin-bottom: 10px;
+                    font: 700 1.375rem 'Lato', sans-serif;
+                    color: #fff;
+                    @media (max-width: 990px) {
+                        font: 700 1.2rem 'Lato', sans-serif;
+                    }
+                }
+                .special_text {
+                    font: 400 1rem 'Lato', sans-serif;
+                    color: #fff;
+                    min-height: 110px;
+                    @media (max-width: 990px) {
+                        min-height: auto;
+                        margin-bottom: 15px;
+                        font: 400 .87rem/18px 'Lato', sans-serif;
+                    }
+                }
+                a {
+                    width: 100%;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    max-width: 170px;
+                    font: 400 1.125rem 'Lato', sans-serif;
+                    text-align: center;
+                    padding: 12px;
+                    color: #000;
+                    background: #fff;
+                    border-radius: 2px;
+                }
+            }
+        }
+        .special_box:last-child {
+            .special_text {
+                margin: 0!important;
+            }
+        }
+    }
+}

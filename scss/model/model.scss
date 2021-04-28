@@ -1,0 +1,125 @@
+.model {
+    background: #F1F1F1;
+    padding-top: 40px!important;
+    padding-bottom: 40px!important;
+}
+
+.model_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    @media (max-width: 1230px) {
+        grid-template-columns: 1fr;
+    }
+    .model_box {
+        background: #fff;
+        .model_img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .model_info {
+            padding: 20px;
+            background: #fff;
+            position: relative;
+            @media (max-width: 990px) {
+                padding: 15px;
+            }
+            .model_name {
+                color: #1CAAE6;
+                margin-bottom: 5px;
+                font: 900 1.65rem 'Lato', sans-serif;
+                @media (max-width: 990px) {
+                    font: 900 1.2rem 'Lato', sans-serif;
+                }
+            }
+            .model_price {
+                font: 900 1.2rem 'Lato', sans-serif;
+                margin-bottom: 10px;
+                @media (max-width: 990px) {
+                    font: 700 1rem 'Lato', sans-serif;
+                }
+            }
+            .model_text {
+                min-height: 200px;
+                font: 400 1rem/20px 'Lato', sans-serif;
+                @media (max-width: 1230px) {
+                    min-height: auto;
+                    max-width: 400px;
+                    margin-bottom: 20px;
+                    font: 400 .87rem/18px 'Lato', sans-serif;
+                }
+            }
+            .btn_model {
+                position: absolute;
+                background: #1CAAE6;
+                border-radius: 3px;
+                width: 100%;
+                display: block;
+                padding: 15px 20px;
+                max-width: 230px;
+                font: 700 1.125rem 'Lato', sans-serif;
+                text-align: center;
+                color: #fff;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                bottom: 20px;
+                left: 20px;
+                @media (max-width: 990px) {
+                    position: relative;
+                    left: auto;
+                    margin-top: 20px;
+                    bottom: auto;
+                }
+            }
+            .model_atr {
+                display: flex;
+                flex-direction: column;
+                min-height: 325px;
+                @media (max-width: 1230px) {
+                    min-height: auto;
+                }
+                .model_atr_box {
+                    display: flex;
+                    margin-bottom: 10px;
+                    align-items: center;
+                    p {
+                        font: 400 1rem/20px 'Lato', sans-serif;
+                        color: #000;
+                        span {
+                            color: #8C8C8C;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .model_atr_box_2 {
+                    margin-top: -10px;
+                    display: flex;
+                    align-items: center;
+                    .model_atr_box_sm {
+                        display: flex;
+                        align-items: center;
+                    }
+                    p {
+                        font: 400 1rem/20px 'Lato', sans-serif;
+                        color: #8C8C8C;
+                        margin-right: 6px;
+                        display: flex;
+                    }
+                    .color_wrap {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin: 8px 4px;
+                            @media (max-width: 360px) {
+                                height: 20px!important;
+                                width: 20px!important;
+                                margin: 8px 3px;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
