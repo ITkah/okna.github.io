@@ -1,0 +1,87 @@
+.besteler {
+    background: #F1F1F1;
+    padding-top: 40px!important;
+    padding-bottom: 40px!important;
+    .besteler_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        position: relative;
+        margin-bottom: 70px;
+        @media (max-width: 990px) {
+            margin-bottom: 50px;
+        }
+        &::before {
+            content: '';
+            background: #F1F1F1;
+            height: 92px;
+            width: 92px;
+            border-radius: 50%;
+            top: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+        }
+        .besteler_box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: #FFFFFF;
+            border-radius: 4px;
+            padding: 30px 60px;
+            img {
+                margin-bottom: 20px;
+                @media (max-width: 990px) {
+                    margin-bottom: 10px;
+                }
+            }
+            p {
+                font: 400 1.125rem/24px 'Lato', sans-serif;
+                text-align: center;
+                min-height: 120px;
+                @media (max-width: 990px) {
+                    min-height: auto;
+                    font: 400 .87rem/18px 'Lato', sans-serif;
+                }
+            }
+        }
+    }
+    .besteler_bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        align-items: center;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+        }
+        .besteler_bottom_box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            p:first-child {
+                color: #1CAAE6;
+                margin-bottom: 10px;
+                font: 900 2.8rem 'Lato', sans-serif;
+            }
+            p:last-child {
+                max-width: 360px;
+                margin: 0 auto;
+                text-align: center;
+                min-height: 80px;
+                font: 400 1.2rem/26px 'Lato', sans-serif;
+                @media (max-width: 990px) {
+                    min-height: auto;
+                }
+            }
+        }
+    }
+}
