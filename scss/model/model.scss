@@ -154,3 +154,24 @@
         }
     }
 }
+
+.input_boxs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    p {
+        display: block;
+        margin-right: 10px;
+        white-space: nowrap;
+    }
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        appearance: none;
+        outline: none;
+        font: 400 .87rem 'Lato', sans-serif;
+        border: 1px solid #AEAEAE;
+        border-radius: 2px;
+        padding: 5px 10px;
+    }
+}
